@@ -1,0 +1,4 @@
+<div class="chat-container">
+  <app-message-list [messages]="messages"></app-message-list>
+  <app-message-form (messageSent)="handleMessageSent($event)"></app-message-form>
+</div>

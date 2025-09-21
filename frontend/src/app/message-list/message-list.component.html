@@ -1,0 +1,7 @@
+<div class="message-list">
+  <div *ngFor="let message of messages" class="message-item" [ngClass]="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}">
+    <div class="message-content">
+      <p>{{ message.text }}</p>
+    </div>
+  </div>
+</div>

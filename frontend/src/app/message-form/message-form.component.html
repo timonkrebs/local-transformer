@@ -1,0 +1,4 @@
+<form [formGroup]="messageForm" (ngSubmit)="sendMessage()" class="message-form">
+  <input formControlName="message" placeholder="Type a message..." class="message-input">
+  <button type="submit" [disabled]="!messageForm.valid" class="send-button">Send</button>
+</form>
