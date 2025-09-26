@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git PR Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Git PR Review</h1>
+    <form id="review-form">
+        <label for="repo-url">Repository URL:</label>
+        <input type="text" id="repo-url" name="repoUrl" required>
+        <label for="source-branch">Source Branch:</label>
+        <input type="text" id="source-branch" name="sourceBranch" required>
+        <label for="target-branch">Target Branch:</label>
+        <input type="text" id="target-branch" name="targetBranch" required>
+        <button type="submit">Get Review</button>
+    </form>
+    <div id="review-result"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,15 +1,18 @@
 {
-  "name": "deepseek",
+  "name": "git-pr-reviewer",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A simple web app to review git pull requests.",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.7.3",
+    "express": "^4.19.2",
+    "simple-git": "^3.28.0",
+    "cors": "^2.8.5"
   },
   "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@huggingface/transformers": "^3.7.3"
-  }
+  "license": "ISC"
 }
